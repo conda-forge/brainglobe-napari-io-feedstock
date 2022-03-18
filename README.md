@@ -5,7 +5,7 @@ Home: https://brainglobe.info
 
 Package license: BSD-3-Clause
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/brainglobe-napari-io-feedstock/blob/master/LICENSE.txt)
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/brainglobe-napari-io-feedstock/blob/main/LICENSE.txt)
 
 Summary: Read and write files from the BrainGlobe neuroanatomy suite
 
@@ -17,8 +17,8 @@ Current build status
 
 <table><tr><td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=15413&branchName=master">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/brainglobe-napari-io-feedstock?branchName=master">
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=15413&branchName=main">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/brainglobe-napari-io-feedstock?branchName=main">
       </a>
     </td>
   </tr>
