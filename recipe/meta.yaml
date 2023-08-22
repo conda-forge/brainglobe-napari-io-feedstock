@@ -23,8 +23,6 @@ requirements:
     - bg-space
     - brainglobe-utils
     - napari
-    - napari-ndtiffs
-    - napari-plugin-engine >=0.1.4
     - python >=3.6
     - tifffile >=2020.8.13
     - numpy
