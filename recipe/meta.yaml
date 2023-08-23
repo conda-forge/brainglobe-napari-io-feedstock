@@ -31,7 +31,6 @@ requirements:
 test:
   imports:
     - brainglobe_napari_io
-    - brainglobe_napari_io.plugins
   commands:
     - pip list
     - pip check
