@@ -1,5 +1,5 @@
 {% set name = "brainglobe-napari-io" %}
-{% set version = "0.1.5" %}
+{% set version = "0.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/brainglobe-napari-io-{{ version }}.tar.gz
-  sha256: 223c3262da970c586f33647325a495ed7c244ce5117a8ec66d52209102c2c50c
+  sha256: bf98aebf3bdbbc6c2f06ecf83e6fde6a1f6724b6829b8d00ce3f71515f97d3b9
 
 build:
   noarch: python
@@ -21,17 +21,16 @@ requirements:
   run:
     - bg-atlasapi
     - bg-space
-    - imlib
+    - brainglobe-utils
     - napari
-    - napari-ndtiffs
-    - napari-plugin-engine >=0.1.4
     - python >=3.6
     - tifffile >=2020.8.13
+    - numpy
+    - pandas
 
 test:
   imports:
     - brainglobe_napari_io
-    - brainglobe_napari_io.plugins
   commands:
     - pip list
     - pip check
