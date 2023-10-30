@@ -1,5 +1,5 @@
 {% set name = "brainglobe-napari-io" %}
-{% set version = "0.2.2" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/brainglobe-napari-io-{{ version }}.tar.gz
-  sha256: 4ee5acf5ecae27f6a7c11fbfe15f7bb39a17940a18a252fb9941c37bcd3687f6
+  sha256: 5c418cd7179a1e38545fb47b43916a6bb0a683c4af9b63bcac944ca9d3d94757
 
 build:
   noarch: python
