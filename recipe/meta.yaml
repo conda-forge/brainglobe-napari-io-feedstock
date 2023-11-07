@@ -12,21 +12,23 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.8
+    - setuptools
+    - setuptools-scm
   run:
     - bg-atlasapi
     - bg-space
     - brainglobe-utils
     - napari
-    - python >=3.6
-    - tifffile >=2020.8.13
     - numpy
     - pandas
+    - python >=3.8
+    - tifffile >=2020.8.13
 
 test:
   imports:
@@ -46,6 +48,6 @@ about:
 
 extra:
   recipe-maintainers:
+    - adamltyson
     - goanpeca
     - jaimergp
-    - adamltyson
