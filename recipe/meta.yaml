@@ -1,5 +1,5 @@
 {% set name = "brainglobe-napari-io" %}
-{% set version = "0.3.2" %}
+{% set version = "0.3.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/brainglobe-napari-io-{{ version }}.tar.gz
-  sha256: 18eab137c37bbbab0b8723e5e0bf130c3f84673f8e30502ffb9e240c73cf4f64
+  sha256: 36b67e69586045b51324b2d0e5de176bc26ab00b31db4cdad45e0d5186e36591
 
 build:
   noarch: python
@@ -22,7 +22,7 @@ requirements:
     - setuptools-scm
   run:
     - bg-atlasapi
-    - bg-space
+    - brainglobe-space
     - brainglobe-utils
     - napari
     - numpy
