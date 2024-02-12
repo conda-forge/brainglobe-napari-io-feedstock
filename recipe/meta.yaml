@@ -22,7 +22,7 @@ requirements:
     - setuptools-scm
   run:
     - bg-atlasapi
-    - bg-space
+    - brainglobe-space
     - brainglobe-utils
     - napari
     - numpy
