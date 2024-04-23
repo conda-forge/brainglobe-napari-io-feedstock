@@ -21,7 +21,7 @@ requirements:
     - setuptools
     - setuptools-scm
   run:
-    - bg-atlasapi
+    - brainglobe-atlasapi
     - brainglobe-space
     - brainglobe-utils
     - napari
