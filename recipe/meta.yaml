@@ -6,18 +6,18 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/brainglobe-napari-io-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/brainglobe-napari-io-{{ version }}.tar.gz
   sha256: bb0822460d9063d6c48dbd43618284d0eb65d1f539bbb02ee90addf67e4d5de5
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - pip
-    - python >=3.9
+    - python {{ python_min }}
     - setuptools
     - setuptools-scm
   run:
@@ -27,7 +27,7 @@ requirements:
     - napari
     - numpy
     - pandas
-    - python >=3.9
+    - python >={{ python_min }}
     - tifffile >=2020.8.13
 
 test:
@@ -38,6 +38,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://brainglobe.info
