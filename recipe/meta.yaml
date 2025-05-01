@@ -1,18 +1,18 @@
 {% set name = "brainglobe-napari-io" %}
-{% set version = "0.3.4" %}
+{% set version = "0.3.5" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/brainglobe-napari-io-{{ version }}.tar.gz
-  sha256: bb0822460d9063d6c48dbd43618284d0eb65d1f539bbb02ee90addf67e4d5de5
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: b8ad0e307406f1019acbbf5d5761bda5e207bcaaf217a74756365dd55bf63566
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
