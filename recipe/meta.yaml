@@ -1,5 +1,6 @@
 {% set name = "brainglobe-napari-io" %}
 {% set version = "0.3.5" %}
+{% set python_min = "3.11" %}
 
 package:
   name: {{ name|lower }}
