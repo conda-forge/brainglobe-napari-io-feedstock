@@ -29,6 +29,7 @@ requirements:
     - numpy
     - pandas
     - python >={{ python_min }}
+    - qt-niu
     - tifffile >=2020.8.13
 
 test:
